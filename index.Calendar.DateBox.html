@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<!---
+-                     jQuery easy ui 插件学习
+-                         
+-
+-                                       2015.09.20 21:40
+-->
+<head>
+    <title>jQuery Easy UI</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="js/easyui/jquery.min.js"></script>
+    <!--导入jquery-->
+    <script type="text/javascript" src="js/easyui/jquery.easyui.min.js"></script>
+    <!--导入jquery.easyui-->
+    <script type="text/javascript" src="js/easyui/locale/easyui-lang-zh_CN.js" ></script>
+    <!--导入jquery.easyui语言包-->
+    <script type="text/javascript" src="js/index.calendar.js"></script>
+    <!---这是自定义js-->
+    <link rel="stylesheet" type="text/css" href="js/easyui/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="js/easyui/themes/icon.css" />
+    <!--导入jqueryeasyui的默认主题-->
+    <link rel="stylesheet" type="text/css" href="css/index.calendar.css">
+</head>
+<body>
+    <div class="box">
+       <!--calendar日历-->
+        <div class="calendar1 easyui-calendar" ></div><!--通过class方式加载的日历狂组件-->
+        <div class="calendar2" ></div><!--通过JS方式加载的日历框组件-->
+        <br />------------------日历输入框--------------------------<br />
+        <div class="datebox1 easyui-datebox" style="width: 100px;background-color: red;"></div><!--class方式记载日历输入框组件-->
+        <div class="datebox2"></div><!--使用JS方式加载-->
+        <br />---------多个日历输入框共用一个日历--------------<br />
+
+        <div class="easyui-datebox datebox3" style="width: 100px;" data-options="sharedCalendar:'.gt_calendar'"></div>
+        <div class="easyui-datebox datebox4" style="width: 100px;" data-options="sharedCalendar:'.gt_calendar'"></div>
+        <div class="easyui-calendar gt_calendar" ></div>
+
+   </div><!--div.box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
